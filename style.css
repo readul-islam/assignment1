@@ -3,11 +3,13 @@
   padding: 0;
 }
 .header-section {
-  height: 100vh;
+  
   background-image: url("./images/donation13.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  height: 100vh;
+  weight:100%;
 }
 
 .title {
@@ -15,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30vh;
+ height: 100%;
 }
 .title h1 {
   font-size: 64px;
@@ -36,16 +38,26 @@
   font-weight: 600;
 }
 
-.donate-today {
+.donate-section {
+  max-width:1280px;
+  margin:0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 30px 0;
+  justify-content: center;
+  
 }
-.donate-today h3 {
-  font-size: 40px;
+.donate-title{
+  text-align: center;
+}
+.donate-title h3 {
+  font-size: 45px;
   margin-bottom: 20px;
 }
-.donate-today p {
+.donate-title p {
   font-size: 18px;
+  margin-bottom:50px;
 }
 .today-tk{
     display:flex;
@@ -54,6 +66,8 @@
     gap:22px
 }
 .today-tk p {
+  font-weight:600;
+  font-size: 30px;
   width: 135px;
   height: 123px;
   background-color: #FAFAFA;
@@ -61,6 +75,12 @@
   justify-content: center;
   align-items: center;
 
+}
+#selected{
+  border:1px solid #FF5959;
+color: #FF5959;
+background-color: #FFEEEE
+  
 }
 .other-amont{
     display: flex;
